@@ -1,74 +1,81 @@
 """
-Production settings - used on Vercel/Railway deployment
+Production settings for Chakancha Backend
 """
 
-import os
-import dj_database_url
 from .base import *
+import os
 
-# Debug MUST be False in production
-DEBUG = False
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 # Allowed hosts
-ALLOWED_HOSTS = os.environ.get(
-    'ALLOWED_HOSTS',
-    'localhost,127.0.0.1,.railway.app,.vercel.app,chakancha-ai-chatbot-backend.vercel.app'
-).split(',')
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '.vercel.app',
+    'chakancha-ai-chatbot-backend.vercel.app',
+]
 
-# Database - PostgreSQL on Supabase
-DATABASE_URL = os.environ.get(
-    'DATABASE_URL',
-    'postgresql://postgres.ssqxcyrmtbrzfjqfkaxg:gpslab@gpslab@2025@aws-0-us-west-1.pooler.supabase.com:5432/postgres'
-)
-
-DATABASES = {
-    'default': dj_database_url.config(
-        default=DATABASE_URL,
-        conn_max_age=600,
-        conn_health_checks=True,
-        ssl_require=True,
-    )
-}
+# Add environment variable for custom domain if you have one
+if os.environ.get('ALLOWED_HOST'):
+    ALLOWED_HOSTS.append(os.environ.get('ALLOWED_HOST'))
 
 # CORS settings for production
-CORS_ALLOWED_ORIGINS = os.environ.get(
-    'CORS_ALLOWED_ORIGINS',
-    'https://chakancha-ai-chatbot-frontend.vercel.app'
-).split(',')
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:5173',
+    'http://127.0.0.1:5173',
+    'https://chakancha-ai-chatbot-frontend.vercel.app',
+]
+
+# Add environment variable for custom frontend domain
+if os.environ.get('FRONTEND_URL'):
+    CORS_ALLOWED_ORIGINS.append(os.environ.get('FRONTEND_URL'))
 
 CORS_ALLOW_CREDENTIALS = True
+
+# CSRF trusted origins
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:5173',
+    'https://chakancha-ai-chatbot-frontend.vercel.app',
+    'https://*.vercel.app',
+]
+
+# Database
+# Use SQLite for Vercel (serverless doesn't persist files, but works for testing)
+# For production, use PostgreSQL (Supabase)
+if os.environ.get('DATABASE_URL'):
+    import dj_database_url
+    DATABASES = {
+        'default': dj_database_url.config(
+            default=os.environ.get('DATABASE_URL'),
+            conn_max_age=600,
+            conn_health_checks=True,
+        )
+    }
+else:
+    # Fallback to SQLite (not recommended for production)
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': '/tmp/db.sqlite3',  # Vercel /tmp directory
+        }
+    }
 
 # Security settings
 SECURE_SSL_REDIRECT = False  # Vercel handles SSL
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
-SECURE_HSTS_SECONDS = 31536000
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-SECURE_HSTS_PRELOAD = True
-SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_BROWSER_XSS_FILTER = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
 X_FRAME_OPTIONS = 'DENY'
 
-# CSRF settings
-CSRF_COOKIE_HTTPONLY = False
-CSRF_COOKIE_SAMESITE = 'Lax'
-SESSION_COOKIE_SAMESITE = 'Lax'
-
-CSRF_TRUSTED_ORIGINS = os.environ.get(
-    'CSRF_TRUSTED_ORIGINS',
-    'https://chakancha-ai-chatbot-frontend.vercel.app,https://chakancha-ai-chatbot-backend.vercel.app'
-).split(',')
-
-# Static files
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-# Logging for production
+# Logging
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'formatters': {
         'verbose': {
-            'format': '{levelname} {asctime} {module} {message}',
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
             'style': '{',
         },
     },
@@ -78,11 +85,15 @@ LOGGING = {
             'formatter': 'verbose',
         },
     },
+    'root': {
+        'handlers': ['console'],
+        'level': 'INFO',
+    },
     'loggers': {
         'django': {
             'handlers': ['console'],
-            'level': 'WARNING',
-            'propagate': True,
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+            'propagate': False,
         },
         'chatbot': {
             'handlers': ['console'],
@@ -90,13 +101,9 @@ LOGGING = {
             'propagate': False,
         },
     },
-    'root': {
-        'handlers': ['console'],
-        'level': 'INFO',
-    },
 }
 
-print("🚀 Production settings loaded")
-print(f"🌐 Allowed hosts: {ALLOWED_HOSTS}")
-print(f"🔒 SSL Redirect: {SECURE_SSL_REDIRECT}")
-print(f"🗄️  Database: PostgreSQL (Supabase)")
+# Static files (already configured in base.py with WhiteNoise)
+# No additional config needed
+
+print("✅ Using PRODUCTION settings")
