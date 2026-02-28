@@ -14,7 +14,7 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-CHANGE-THIS-IN-PRODUCTION')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-local-dev-CHANGE-IN-PROD-ch4k4nch4-2025-abc123xyz')
 
 # Application definition
 INSTALLED_APPS = [
@@ -144,25 +144,40 @@ CHATBOT_CONFIG = {
 }
 
 # ═══════════════════════════════════════════════════════
-# API KEYS & EXTERNAL SERVICES
+# API KEYS & EXTERNAL SERVICES (WITH FALLBACK DEFAULTS)
 # ═══════════════════════════════════════════════════════
 
-# Anthropic Claude API
-ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY', '')
+# Anthropic Claude API (Cloud Sonnet - Chakancha Chatbot)
+ANTHROPIC_API_KEY = os.environ.get(
+    'ANTHROPIC_API_KEY',
+    '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'
+)
 
-# OpenAI API (for embeddings)
-OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY', '')
+# OpenAI API (Embeddings for RAG System)
+OPENAI_API_KEY = os.environ.get(
+    'OPENAI_API_KEY',
+    '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'
+)
 
-# Pinecone Vector Database (RAG System)
-PINECONE_API_KEY = os.environ.get('PINECONE_API_KEY', '')
+# Pinecone Vector Database (RAG FAQ Storage)
+PINECONE_API_KEY = os.environ.get(
+    'PINECONE_API_KEY',
+    'pcsk_3SHH1W_8WMkx7xRXocgrkiN2TtqFrev3z3RFgxUYDfXqrxGMwSzSygAqh5eW97pFG8pVHJ'
+)
 PINECONE_ENVIRONMENT = os.environ.get('PINECONE_ENVIRONMENT', 'us-east-1')
 PINECONE_INDEX_NAME = os.environ.get('PINECONE_INDEX_NAME', 'chakancha-faq-en')
 
-# Supabase
-SUPABASE_URL = os.environ.get('SUPABASE_URL', '')
-SUPABASE_KEY = os.environ.get('SUPABASE_KEY', '')
+# Supabase (Database & Storage)
+SUPABASE_URL = os.environ.get(
+    'SUPABASE_URL',
+    'https://ssqxcyrmtbrzfjqfkaxg.supabase.co'
+)
+SUPABASE_KEY = os.environ.get(
+    'SUPABASE_KEY',
+    'sb_publishable_Ifl4V96Kxg3tizMdKPfY4g_EZo3IBYc'
+)
 
-# DHL API (Phase 5)
+# DHL API (Phase 5 - Empty by default, uses mock mode)
 DHL_API_KEY = os.environ.get('DHL_API_KEY', '')
 
 # ═══════════════════════════════════════════════════════

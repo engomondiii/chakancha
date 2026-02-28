@@ -335,6 +335,10 @@ class DHLTrackingClient:
         # - Start with specific prefixes
         # - May contain letters and numbers
         
+        # In mock mode, accept test numbers
+        if self.mock_mode and tracking_number.upper().startswith('TEST'):
+            return True
+        
         # Basic validation: between 8 and 39 characters
         if len(tracking_number) < 8 or len(tracking_number) > 39:
             return False
