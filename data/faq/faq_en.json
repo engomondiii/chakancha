@@ -1,0 +1,542 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "language": "en",
+    "last_updated": "2026-02-28",
+    "total_faqs": 65,
+    "categories": [
+      "tea_production",
+      "tea_processing",
+      "market_information",
+      "pricing",
+      "quality_standards",
+      "business_operations",
+      "employment",
+      "investment",
+      "export",
+      "general"
+    ]
+  },
+  "faqs": [
+    {
+      "id": "faq_001",
+      "category": "tea_production",
+      "question": "What is tea and where does it come from?",
+      "answer": "Tea comes from the Camellia Sinensis plant, a shrub cultivated from antiquity in China and now grown in countries like Japan, India, Kenya, and Ethiopia. The plant has lanceolate leaves and fragrant white flowers. Both black and green tea are derived from this same plant.",
+      "keywords": ["tea plant", "camellia sinensis", "origin", "tea source"],
+      "related_faqs": ["faq_002", "faq_003"]
+    },
+    {
+      "id": "faq_002",
+      "category": "tea_processing",
+      "question": "What is the difference between black tea and green tea?",
+      "answer": "The difference between black and green tea comes from how the plant is processed, not from different plants. Black tea goes through withering, rolling, oxidation, and firing. Green tea skips the oxidation process - the leaves are withered, then pan-fired to prevent oxidation, rolled, and dried. This is why green tea leaves remain green while black tea leaves turn dark.",
+      "keywords": ["black tea", "green tea", "difference", "processing", "oxidation"],
+      "related_faqs": ["faq_001", "faq_003", "faq_004"]
+    },
+    {
+      "id": "faq_003",
+      "category": "tea_processing",
+      "question": "How is black tea processed?",
+      "answer": "Black tea processing involves four main stages: 1) Withering - leaves are spread to dry and reduce water content for about a day until pliable. 2) Rolling - leaves are twisted to break cells and release aromatic oils. 3) Oxidation - leaves absorb oxygen and turn bright copper color for several hours. 4) Firing - leaves are moved through hot air chambers to stop fermentation, turning dark and losing moisture to about 2%.",
+      "keywords": ["black tea", "processing", "withering", "rolling", "oxidation", "firing"],
+      "related_faqs": ["faq_002", "faq_004"]
+    },
+    {
+      "id": "faq_004",
+      "category": "tea_processing",
+      "question": "How is green tea processed?",
+      "answer": "Green tea processing is the shortest. The steps are: 1) Withering (sometimes omitted). 2) Pan firing or firing to prevent oxidation from occurring. 3) Rolling the leaves. 4) Final drying for its final shape. The key difference is that green tea skips the rolling and oxidation stages, which is why the leaves remain green.",
+      "keywords": ["green tea", "processing", "pan firing", "no oxidation"],
+      "related_faqs": ["faq_002", "faq_003"]
+    },
+    {
+      "id": "faq_005",
+      "category": "tea_production",
+      "question": "What are the main stages of tea processing?",
+      "answer": "The common tea processing stages are: Withering (reducing water content), Rolling (breaking leaf cells to release oils), Oxidation (chemical process where oxygen is absorbed), and Drying or Firing (stopping oxidation and locking in flavor). The extent of oxidation determines whether you get black, green, or oolong tea.",
+      "keywords": ["processing stages", "withering", "rolling", "oxidation", "firing"],
+      "related_faqs": ["faq_003", "faq_004"]
+    },
+    {
+      "id": "faq_006",
+      "category": "quality_standards",
+      "question": "What quality standards do Kenyan tea producers follow?",
+      "answer": "Kenyan tea is known for being 100% organic, fair trade, and hand-picked for the highest quality. Premium Kenyan black tea often comes from highland regions like Nandi County, which provides ideal growing conditions for exceptional tea quality.",
+      "keywords": ["quality", "organic", "fair trade", "hand-picked", "Kenya", "standards"],
+      "related_faqs": ["faq_001", "faq_007"]
+    },
+    {
+      "id": "faq_007",
+      "category": "tea_production",
+      "question": "What makes Kenyan tea special?",
+      "answer": "Kenyan tea is special because it's grown in highland regions with ideal conditions, is 100% organic, fair trade certified, and hand-picked to ensure the highest quality. Kenya is one of the world's leading tea producers, known for premium black tea with distinctive flavor and aroma.",
+      "keywords": ["Kenyan tea", "premium", "highland", "quality", "special"],
+      "related_faqs": ["faq_006", "faq_001"]
+    },
+    {
+      "id": "faq_008",
+      "category": "market_information",
+      "question": "What is the current demand for tea in Kenya and East Africa?",
+      "answer": "The current domestic demand for black and green tea is estimated at 6,077.91 tonnes per year. The market is expected to grow significantly, with projections showing demand reaching 1,434.73 tonnes by 2022 for new market entrants. Kenya also exports an average of 707.15 tonnes annually.",
+      "keywords": ["demand", "market", "Kenya", "East Africa", "consumption"],
+      "related_faqs": ["faq_009", "faq_010"]
+    },
+    {
+      "id": "faq_009",
+      "category": "market_information",
+      "question": "Is the tea market growing in Kenya?",
+      "answer": "Yes, the tea market in Kenya is growing steadily. Demand is expected to grow at 4% annually for domestic consumption, driven by urbanization and increased tea consumption in cities and towns. Tea is widely consumed at homes, workplaces, conferences, colleges, and hospitals.",
+      "keywords": ["growth", "market growth", "demand increase", "urbanization"],
+      "related_faqs": ["faq_008", "faq_010"]
+    },
+    {
+      "id": "faq_010",
+      "category": "export",
+      "question": "Does Kenya export tea?",
+      "answer": "Yes, Kenya exports significant amounts of tea. The country exported an average of 707.15 tonnes of black and green tea annually, with export volumes ranging from 35.24 tonnes to 2,193.02 tonnes depending on the year. Export demand is projected to grow at 7% annually.",
+      "keywords": ["export", "international", "trade", "overseas markets"],
+      "related_faqs": ["faq_008", "faq_009"]
+    },
+    {
+      "id": "faq_011",
+      "category": "pricing",
+      "question": "What is the typical wholesale price for tea in Kenya?",
+      "answer": "Based on market data, processed tea is typically sold at around Birr 25.50 per kilogram at wholesale level. A 100-gram pack of domestically produced tea retails at approximately Birr 3.00, with a 15% margin for wholesale and retail distribution.",
+      "keywords": ["price", "pricing", "wholesale", "cost", "birr"],
+      "related_faqs": ["faq_012", "faq_013"]
+    },
+    {
+      "id": "faq_012",
+      "category": "pricing",
+      "question": "How much does tea cost at retail level?",
+      "answer": "At retail level, a 100-gram pack of domestically produced tea is sold at approximately Birr 3.00. Wholesale and retail margins together account for about 15% of the final price.",
+      "keywords": ["retail price", "consumer price", "pack price", "100g"],
+      "related_faqs": ["faq_011", "faq_013"]
+    },
+    {
+      "id": "faq_013",
+      "category": "business_operations",
+      "question": "How is tea distributed and sold in Kenya?",
+      "answer": "Tea gets its market outlet through existing wholesale and retail networks including department stores, merchandise shops, and supermarkets. The distribution chain includes wholesale dealers who supply to retailers, who then sell to end consumers.",
+      "keywords": ["distribution", "sales channels", "retail", "wholesale", "supermarkets"],
+      "related_faqs": ["faq_011", "faq_012"]
+    },
+    {
+      "id": "faq_014",
+      "category": "tea_production",
+      "question": "What is the production capacity of a small-scale tea processing plant?",
+      "answer": "A small-scale tea processing and packing plant typically has a capacity of 100 tonnes per annum. The plant operates a single shift of 8 hours a day for 300 days a year. Plants usually start at 65% capacity in year one, gradually increasing to 100% by year four.",
+      "keywords": ["capacity", "production volume", "small scale", "100 tonnes"],
+      "related_faqs": ["faq_015", "faq_016"]
+    },
+    {
+      "id": "faq_015",
+      "category": "tea_production",
+      "question": "How much raw material is needed to produce processed tea?",
+      "answer": "To produce 100 tonnes of processed tea annually, you need approximately 500 tonnes of green tea leaves as raw material. This means the processing ratio is about 5:1 - five kilograms of fresh leaves produce one kilogram of processed tea.",
+      "keywords": ["raw material", "green leaves", "input", "processing ratio"],
+      "related_faqs": ["faq_014", "faq_016"]
+    },
+    {
+      "id": "faq_016",
+      "category": "business_operations",
+      "question": "What are the main operating costs for a tea processing plant?",
+      "answer": "Main operating costs include: raw materials (green leaves at Birr 750,000), auxiliary materials like PP sheets and packing materials (Birr 125,000), utilities including electricity, water, and wood (Birr 133,440), labor costs (Birr 261,750), and maintenance (Birr 210,000). Total annual operating costs are approximately Birr 1.48 million at full capacity.",
+      "keywords": ["costs", "operating expenses", "production cost", "overhead"],
+      "related_faqs": ["faq_017", "faq_018"]
+    },
+    {
+      "id": "faq_017",
+      "category": "investment",
+      "question": "How much does it cost to set up a tea processing plant?",
+      "answer": "The total investment cost for a 100-tonne capacity tea processing plant is approximately Birr 5.36 million. This includes: land lease (Birr 400,000), building and civil work (Birr 1.125 million), plant machinery and equipment (Birr 3.1 million), office furniture (Birr 50,000), vehicle (Birr 150,000), pre-production expenses (Birr 400,800), and working capital (Birr 136,900).",
+      "keywords": ["investment", "setup cost", "capital required", "startup cost"],
+      "related_faqs": ["faq_016", "faq_018", "faq_019"]
+    },
+    {
+      "id": "faq_018",
+      "category": "investment",
+      "question": "What is the return on investment for a tea processing business?",
+      "answer": "The tea processing business shows strong returns with an Internal Rate of Return (IRR) of 14% and a Net Present Value (NPV) of Birr 759,660 at 8.5% discount rate. The project breaks even at 28% capacity utilization and has a payback period of 6 years.",
+      "keywords": ["ROI", "return", "profitability", "IRR", "NPV", "break even"],
+      "related_faqs": ["faq_017", "faq_019"]
+    },
+    {
+      "id": "faq_019",
+      "category": "investment",
+      "question": "What financing options are available for tea processing businesses?",
+      "answer": "Typical financing structure includes 30% equity and 70% loan financing. Bank interest rates are around 8.5%. Projects often receive tax holidays for 5 years. The construction period is typically 1 year before operations begin.",
+      "keywords": ["financing", "loans", "equity", "bank", "funding"],
+      "related_faqs": ["faq_017", "faq_018"]
+    },
+    {
+      "id": "faq_020",
+      "category": "employment",
+      "question": "How many employees does a tea processing plant need?",
+      "answer": "A 100-tonne capacity tea processing plant requires 28 employees total: 11 in administration (including plant manager, secretary, personnel officer, accountant, salesman, etc.) and 17 in production (production supervisor, technologist, skilled workers, laborers, technicians, and packers).",
+      "keywords": ["employment", "jobs", "workers", "staff", "manpower"],
+      "related_faqs": ["faq_021", "faq_022"]
+    },
+    {
+      "id": "faq_021",
+      "category": "employment",
+      "question": "What are typical wages in the tea processing industry in Kenya?",
+      "answer": "Annual wages range from Birr 9,000 for general services workers to Birr 24,000 for plant managers. Production supervisors earn Birr 18,000, technologists Birr 14,400, and skilled workers Birr 43,200 annually. Total annual labor costs including benefits (25% of base salary) are approximately Birr 261,750.",
+      "keywords": ["wages", "salary", "compensation", "pay", "labor cost"],
+      "related_faqs": ["faq_020", "faq_022"]
+    },
+    {
+      "id": "faq_022",
+      "category": "employment",
+      "question": "What training is required for tea processing workers?",
+      "answer": "Machinery operators, technicians, and technologists require training for a period of two weeks during equipment erection and commissioning. A budget of approximately Birr 10,000 is typically allocated for training programs.",
+      "keywords": ["training", "skills", "education", "learning", "development"],
+      "related_faqs": ["faq_020", "faq_021"]
+    },
+    {
+      "id": "faq_023",
+      "category": "tea_production",
+      "question": "What equipment is needed for tea processing?",
+      "answer": "Essential equipment includes: transportation equipment for tea leaves, storage bins (20 units), withering racks or troughs (20 units), ovens for oxidation (2 units), frying pans for green tea (2 units), hot gas generator with burner and accessories, packing machines with tables and auxiliaries, and various tools and accessories.",
+      "keywords": ["equipment", "machinery", "tools", "processing equipment"],
+      "related_faqs": ["faq_024", "faq_017"]
+    },
+    {
+      "id": "faq_024",
+      "category": "business_operations",
+      "question": "Where can I buy tea processing equipment?",
+      "answer": "Tea processing equipment is widely produced and supplied by Indian machinery manufacturers. India is particularly known for marketing tea equipment to Africa. One example supplier is Tea Spares Enterprise in Kolkata, India. Equipment can also be sourced from manufacturers in China and other Asian countries.",
+      "keywords": ["suppliers", "equipment source", "machinery suppliers", "India"],
+      "related_faqs": ["faq_023"]
+    },
+    {
+      "id": "faq_025",
+      "category": "tea_production",
+      "question": "What utilities are required for tea processing?",
+      "answer": "Main utilities required are: electricity (60,000 kWh annually) for running equipment, lighting, and power sockets; water (500 m³ annually) for drinking and general purposes; and wood (150 m³ annually) for generating hot gas to dry green tea leaves. Annual utility costs are approximately Birr 133,440.",
+      "keywords": ["utilities", "electricity", "water", "fuel", "energy"],
+      "related_faqs": ["faq_016", "faq_023"]
+    },
+    {
+      "id": "faq_026",
+      "category": "tea_production",
+      "question": "What packaging materials are needed for tea?",
+      "answer": "Packaging materials include PP sheets, packing paper boxes, labels, and cartons. Annual costs for auxiliary materials at full capacity are approximately Birr 125,000, which includes Birr 30,000 for PP sheets, Birr 45,000 for packing boxes and labels, and Birr 50,000 for cartons.",
+      "keywords": ["packaging", "packing materials", "cartons", "labels"],
+      "related_faqs": ["faq_013", "faq_016"]
+    },
+    {
+      "id": "faq_027",
+      "category": "general",
+      "question": "Where is tea consumed in Kenya?",
+      "answer": "Tea is widely consumed both in urban and rural parts of Kenya. It's consumed at home and at workplaces, during break times, at conferences and seminars, and at colleges and hospitals. As urbanization grows, particularly in cities and towns, tea consumption is increasing at almost all meals.",
+      "keywords": ["consumption", "usage", "where consumed", "tea drinking"],
+      "related_faqs": ["faq_008", "faq_009"]
+    },
+    {
+      "id": "faq_028",
+      "category": "quality_standards",
+      "question": "How should tea be stored?",
+      "answer": "Tea should be stored in dry, cool conditions away from direct sunlight. Proper storage maintains the tea's flavor, aroma, and quality. Commercial tea processing plants use dedicated storage bins and warehouses to protect both raw materials (green leaves) and finished products.",
+      "keywords": ["storage", "preservation", "keeping tea fresh"],
+      "related_faqs": ["faq_026", "faq_023"]
+    },
+    {
+      "id": "faq_029",
+      "category": "tea_production",
+      "question": "What is the withering process in tea production?",
+      "answer": "Withering is the first stage of tea processing where newly picked leaves are thinly spread to dry. Heated air may be forced over the leaves if climate conditions aren't suitable. The main goal is to reduce water content until the leaves are pliable enough to be rolled. This process typically takes about a day for black tea.",
+      "keywords": ["withering", "drying", "first stage", "water reduction"],
+      "related_faqs": ["faq_003", "faq_005"]
+    },
+    {
+      "id": "faq_030",
+      "category": "tea_production",
+      "question": "What happens during the rolling stage of tea processing?",
+      "answer": "During rolling, tea leaves are twisted and rolled so that leaf cells are broken up, releasing aromatic oils that give tea its distinctive aroma. This can be done by machinery or by hand. The juices released remain on the leaf, initiating a chemical change that leads to oxidation.",
+      "keywords": ["rolling", "twisting", "aromatic oils", "cell breaking"],
+      "related_faqs": ["faq_029", "faq_031"]
+    },
+    {
+      "id": "faq_031",
+      "category": "tea_production",
+      "question": "What is oxidation in tea processing?",
+      "answer": "Oxidation is the chemical process where oxygen is absorbed by the tea leaves. This begins once leaf membranes are broken during rolling. Oxidation causes the leaves to turn bright copper in color. This process is the main deciding factor in determining whether you get green, oolong, or black tea - green tea has no oxidation, black tea is fully oxidized.",
+      "keywords": ["oxidation", "fermentation", "chemical process", "copper color"],
+      "related_faqs": ["faq_030", "faq_032"]
+    },
+    {
+      "id": "faq_032",
+      "category": "tea_production",
+      "question": "What is the firing or drying stage in tea processing?",
+      "answer": "Firing or drying is the final stage where leaves are dried evenly and thoroughly without burning. This stops the oxidation process by killing active enzymes. For black tea, dry heat is applied, turning leaves dark and reducing moisture to about 2%. If firing isn't done correctly and leaves are too dark, the resulting tea will taste weak.",
+      "keywords": ["firing", "drying", "final stage", "stopping oxidation"],
+      "related_faqs": ["faq_031", "faq_003"]
+    },
+    {
+      "id": "faq_033",
+      "category": "employment",
+      "question": "What is the minimum wage in Kenya?",
+      "answer": "Kenya has extensive minimum wage setting with different rates for various industries and occupations. Minimum wage ranges from 158.10 KSH per day for unskilled employees to 824.20 KSH per day for artisans grade I in cities like Nairobi, Mombasa, and Kisumu. Agricultural industry has separate minimum wage rates.",
+      "keywords": ["minimum wage", "labor law", "wages", "compensation"],
+      "related_faqs": ["faq_021", "faq_034"]
+    },
+    {
+      "id": "faq_034",
+      "category": "employment",
+      "question": "What are typical working hours in Kenya?",
+      "answer": "The standard working week in Kenya is 52 hours, but actual average working hours are about 64 hours per week. Most businesses operate 6 days a week. Tea processing plants typically operate single shifts of 8 hours per day for 300 days per year.",
+      "keywords": ["working hours", "work week", "schedule", "shifts"],
+      "related_faqs": ["faq_033", "faq_020"]
+    },
+    {
+      "id": "faq_035",
+      "category": "employment",
+      "question": "What is Kenya's labor force composition?",
+      "answer": "Kenya has approximately 11.4 million workers total: 2.1 million in formal waged employment (1.4 million private sector, 0.7 million public sector) and 9.3 million in the informal sector. This means less than two in ten workers are in formal waged employment. The median hourly wage is 33.67 KSH.",
+      "keywords": ["labor force", "employment statistics", "formal sector", "informal sector"],
+      "related_faqs": ["faq_033", "faq_034"]
+    },
+    {
+      "id": "faq_036",
+      "category": "business_operations",
+      "question": "How long does it take to set up a tea processing plant?",
+      "answer": "The construction and setup period for a tea processing plant is typically 1 year before operations begin. This includes: site preparation, building construction, equipment installation, worker training, and commissioning. Operations usually start at 65% capacity in year one.",
+      "keywords": ["setup time", "construction period", "timeline", "project duration"],
+      "related_faqs": ["faq_017", "faq_037"]
+    },
+    {
+      "id": "faq_037",
+      "category": "business_operations",
+      "question": "What is the production ramp-up schedule for a new tea plant?",
+      "answer": "New tea plants typically follow this production schedule: Year 1 - 65% capacity (65 tonnes), Year 2 - 75% capacity (75 tonnes), Year 3 - 85% capacity (85 tonnes), Year 4 and beyond - 100% capacity (100 tonnes). This gradual increase allows for skill development and market establishment.",
+      "keywords": ["ramp up", "production schedule", "capacity utilization", "growth"],
+      "related_faqs": ["faq_036", "faq_014"]
+    },
+    {
+      "id": "faq_038",
+      "category": "business_operations",
+      "question": "What land area is needed for a tea processing plant?",
+      "answer": "A tea processing plant requires approximately 5,000 m² of land area. Of this, 750 m² is used for buildings (factory building, administration offices, warehouses for raw materials and finished products). The remaining land is used for pathways and future expansion. Land lease costs about Birr 1.0 per m².",
+      "keywords": ["land", "space", "area", "facilities", "real estate"],
+      "related_faqs": ["faq_017", "faq_036"]
+    },
+    {
+      "id": "faq_039",
+      "category": "export",
+      "question": "Which regions or countries import Kenyan tea?",
+      "answer": "Kenyan tea is exported to various international markets. The country has a flourishing export sector with projected growth of 7% annually. Export volumes have ranged from 35.24 to 2,193.02 tonnes annually, showing the potential for international market expansion.",
+      "keywords": ["export markets", "international trade", "importing countries"],
+      "related_faqs": ["faq_010", "faq_008"]
+    },
+    {
+      "id": "faq_040",
+      "category": "market_information",
+      "question": "How is the tea market expected to grow in the future?",
+      "answer": "The tea market shows strong growth potential with domestic demand projected to grow at 4% annually and export demand at 7% annually. Total market demand is expected to reach 1,434.73 tonnes by 2022. Growth is driven by urbanization, increased consumption in workplaces, and expanding export markets.",
+      "keywords": ["growth projection", "future market", "market forecast", "trends"],
+      "related_faqs": ["faq_008", "faq_009", "faq_039"]
+    },
+    {
+      "id": "faq_041",
+      "category": "quality_standards",
+      "question": "What certifications are important for tea exports?",
+      "answer": "Important certifications for tea exports include organic certification, fair trade certification, and quality standards compliance. Kenyan tea is known for being 100% organic and fair trade, which are highly valued certifications in international markets.",
+      "keywords": ["certifications", "organic", "fair trade", "quality standards", "export"],
+      "related_faqs": ["faq_006", "faq_039"]
+    },
+    {
+      "id": "faq_042",
+      "category": "tea_production",
+      "question": "Why is hand-picking important for tea quality?",
+      "answer": "Hand-picking ensures the highest quality tea because skilled pickers select only the best leaves and buds at the right stage of development. This selective harvesting maintains consistent quality and prevents damage to the tea plant, unlike mechanical harvesting which can include stems and lower-quality leaves.",
+      "keywords": ["hand picking", "harvesting", "quality control", "manual picking"],
+      "related_faqs": ["faq_006", "faq_007"]
+    },
+    {
+      "id": "faq_043",
+      "category": "tea_production",
+      "question": "What regions in Kenya are best for tea growing?",
+      "answer": "Highland regions like Nandi County are ideal for tea growing in Kenya. These areas provide the right combination of altitude, climate, and soil conditions for producing premium quality tea. The highland environment contributes to the distinctive flavor and quality of Kenyan tea.",
+      "keywords": ["tea regions", "Nandi County", "highlands", "growing areas", "Kenya"],
+      "related_faqs": ["faq_007", "faq_042"]
+    },
+    {
+      "id": "faq_044",
+      "category": "general",
+      "question": "What are the health benefits of tea?",
+      "answer": "Tea contains natural antioxidants and beneficial compounds. Black and green tea both come from the Camellia Sinensis plant and offer various health benefits. Green tea is particularly valued for its high antioxidant content due to minimal processing, while black tea offers its own unique health properties.",
+      "keywords": ["health benefits", "antioxidants", "wellness", "nutrition"],
+      "related_faqs": ["faq_001", "faq_002"]
+    },
+    {
+      "id": "faq_045",
+      "category": "general",
+      "question": "How do I prepare black tea?",
+      "answer": "To prepare black tea: Use fresh, filtered water and bring to a boil. Use about 1 teaspoon of tea leaves per cup. Pour hot water over the leaves and steep for 3-5 minutes depending on desired strength. Black tea can be enjoyed with or without milk and sugar.",
+      "keywords": ["preparation", "brewing", "how to make", "black tea brewing"],
+      "related_faqs": ["faq_046", "faq_003"]
+    },
+    {
+      "id": "faq_046",
+      "category": "general",
+      "question": "How do I prepare green tea?",
+      "answer": "To prepare green tea: Heat water to about 70-80°C (not boiling, as boiling water can make green tea bitter). Use about 1 teaspoon of tea leaves per cup. Steep for 2-3 minutes. Green tea is typically consumed without milk. Water temperature and steeping time are crucial for good flavor.",
+      "keywords": ["preparation", "brewing", "how to make", "green tea brewing"],
+      "related_faqs": ["faq_045", "faq_004"]
+    },
+    {
+      "id": "faq_047",
+      "category": "business_operations",
+      "question": "What government support is available for tea businesses in Kenya?",
+      "answer": "Tea businesses in Kenya can benefit from various government incentives including tax holidays (typically 5 years for new projects), access to financing through development banks, and support for export promotion. The government also supports agricultural development and fair trade initiatives.",
+      "keywords": ["government support", "incentives", "tax holidays", "business support"],
+      "related_faqs": ["faq_019", "faq_017"]
+    },
+    {
+      "id": "faq_048",
+      "category": "investment",
+      "question": "What portion of investment needs to be in foreign currency?",
+      "answer": "For a tea processing plant, approximately 27% of the total investment cost needs to be in foreign currency. This mainly covers imported machinery and equipment from suppliers in India and other countries, as well as some technical components not available locally.",
+      "keywords": ["foreign currency", "forex", "foreign exchange", "imports"],
+      "related_faqs": ["faq_017", "faq_024"]
+    },
+    {
+      "id": "faq_049",
+      "category": "business_operations",
+      "question": "What are the economic benefits of a tea processing business?",
+      "answer": "Economic benefits include: job creation for 28 people, tax revenue generation of approximately Birr 4.46 million over the project lifetime, foreign exchange savings through import substitution, support for local tea farmers, and contribution to rural development and agricultural value addition.",
+      "keywords": ["economic benefits", "job creation", "economic impact", "development"],
+      "related_faqs": ["faq_020", "faq_018"]
+    },
+    {
+      "id": "faq_050",
+      "category": "employment",
+      "question": "What is social security coverage like in Kenya?",
+      "answer": "Kenya has a national social security fund with 3.7 million registered employees in 2011, which is almost one third of the total labor force. However, coverage is much higher in formal employment sectors compared to informal sectors. Tea processing plants with permanent employees typically contribute to social security.",
+      "keywords": ["social security", "NSSF", "employee benefits", "social protection"],
+      "related_faqs": ["faq_035", "faq_021"]
+    },
+    {
+      "id": "faq_051",
+      "category": "tea_production",
+      "question": "Can I process both black and green tea in the same facility?",
+      "answer": "Yes, the same facility can process both black and green tea since they come from the same plant. The main equipment differences are that green tea requires pan-firing equipment instead of oxidation chambers. Many tea processing plants maintain flexibility to produce both types based on market demand.",
+      "keywords": ["versatility", "dual production", "flexibility", "both types"],
+      "related_faqs": ["faq_002", "faq_023"]
+    },
+    {
+      "id": "faq_052",
+      "category": "quality_standards",
+      "question": "How is tea quality tested?",
+      "answer": "Tea quality is assessed through various parameters including appearance of dry leaves, color and clarity of brewed tea, aroma, taste, and moisture content (should be around 2% for properly processed tea). Professional tea tasters evaluate flavor profiles, and laboratory tests ensure compliance with food safety standards.",
+      "keywords": ["quality testing", "quality control", "testing", "standards"],
+      "related_faqs": ["faq_006", "faq_032"]
+    },
+    {
+      "id": "faq_053",
+      "category": "market_information",
+      "question": "Who are the main competitors in the Kenyan tea market?",
+      "answer": "The Kenyan tea market includes both domestic production (averaging 4,716.11 tonnes annually) and imports (averaging 592.57 tonnes annually). Domestic production accounts for 88.8% of the country's tea requirement. New entrants compete with established producers and importers.",
+      "keywords": ["competition", "market players", "competitors", "market share"],
+      "related_faqs": ["faq_008", "faq_040"]
+    },
+    {
+      "id": "faq_054",
+      "category": "business_operations",
+      "question": "What are the main risks in tea processing business?",
+      "answer": "Main risks include: fluctuating raw material (green leaf) prices, competition from established players and imports, quality control challenges, market demand variations, working capital requirements, and dependency on skilled labor. However, with proper planning and the growing market, these risks can be managed effectively.",
+      "keywords": ["risks", "challenges", "business risks", "risk management"],
+      "related_faqs": ["faq_053", "faq_016"]
+    },
+    {
+      "id": "faq_055",
+      "category": "general",
+      "question": "What is the shelf life of processed tea?",
+      "answer": "Properly processed and packaged tea can maintain its quality for 12-24 months when stored in cool, dry conditions away from direct sunlight and strong odors. The moisture content of about 2% after firing helps preserve the tea. Packaging in airtight containers further extends shelf life.",
+      "keywords": ["shelf life", "expiry", "storage life", "freshness"],
+      "related_faqs": ["faq_028", "faq_026"]
+    },
+    {
+      "id": "faq_056",
+      "category": "tea_production",
+      "question": "What is the ideal moisture content for processed tea?",
+      "answer": "The ideal moisture content for processed tea is approximately 2% after the firing/drying stage. This low moisture content is crucial for preventing mold growth, maintaining flavor and aroma, and ensuring long shelf life. Proper firing ensures leaves reach this moisture level without burning.",
+      "keywords": ["moisture content", "humidity", "drying", "water content"],
+      "related_faqs": ["faq_032", "faq_055"]
+    },
+    {
+      "id": "faq_057",
+      "category": "pricing",
+      "question": "What factors affect tea pricing?",
+      "answer": "Tea pricing is affected by: quality grade (premium teas command higher prices), processing costs, packaging quality, certifications (organic, fair trade), market demand and supply, export vs domestic sales, and distribution costs. Premium highland teas typically fetch better prices than standard grades.",
+      "keywords": ["pricing factors", "price determinants", "cost factors"],
+      "related_faqs": ["faq_011", "faq_006"]
+    },
+    {
+      "id": "faq_058",
+      "category": "tea_production",
+      "question": "What happens if tea is over-oxidized?",
+      "answer": "Over-oxidation can result in tea with harsh, bitter flavors and dark, dull appearance. The oxidation process must be carefully monitored and stopped at the right time through firing. Skilled tea processors know when oxidation has reached the optimal level based on color, aroma, and time.",
+      "keywords": ["over oxidation", "oxidation control", "processing error", "quality issues"],
+      "related_faqs": ["faq_031", "faq_032"]
+    },
+    {
+      "id": "faq_059",
+      "category": "business_operations",
+      "question": "How do I maintain consistent tea quality?",
+      "answer": "Maintaining consistent quality requires: sourcing leaves from reliable growers, implementing standard operating procedures for each processing stage, regular equipment maintenance, trained and skilled workers, quality testing at each stage, proper storage conditions, and consistent timing in oxidation and firing processes.",
+      "keywords": ["quality consistency", "quality control", "standardization", "consistency"],
+      "related_faqs": ["faq_052", "faq_022"]
+    },
+    {
+      "id": "faq_060",
+      "category": "general",
+      "question": "Can tea be grown organically?",
+      "answer": "Yes, tea can be grown organically without synthetic pesticides or fertilizers. Kenyan tea is particularly known for being 100% organic. Organic tea farming uses natural pest control methods, organic fertilizers, and sustainable farming practices, which are increasingly valued by international markets.",
+      "keywords": ["organic tea", "organic farming", "sustainable", "natural"],
+      "related_faqs": ["faq_006", "faq_041"]
+    },
+    {
+      "id": "faq_061",
+      "category": "market_information",
+      "question": "What package sizes are common for retail tea?",
+      "answer": "Common retail package sizes include: 100 grams (most common retail size priced around Birr 3.00), 250 grams, 500 grams, and 1 kilogram. Wholesale and bulk packages can be larger. Package size choice depends on target market and consumer preferences.",
+      "keywords": ["package sizes", "packaging", "retail sizes", "pack sizes"],
+      "related_faqs": ["faq_012", "faq_026"]
+    },
+    {
+      "id": "faq_062",
+      "category": "business_operations",
+      "question": "What documentation is needed to start a tea processing business?",
+      "answer": "Required documentation typically includes: business registration and licensing, food processing permits, health and safety certifications, environmental compliance certificates, quality certifications (organic, fair trade if applicable), and export licenses if planning to export. Costs for registration, licensing, and legal fees are estimated at about Birr 90,000.",
+      "keywords": ["documentation", "licenses", "permits", "registration", "legal"],
+      "related_faqs": ["faq_017", "faq_047"]
+    },
+    {
+      "id": "faq_063",
+      "category": "tea_production",
+      "question": "What is the difference between tea leaves and tea buds?",
+      "answer": "Tea buds are the youngest, most tender growth at the tip of the tea plant, while leaves are more mature. Premium teas often include a higher proportion of buds and young leaves. The combination of leaves, leaf buds, and internodes from the Camellia Sinensis plant is used to prepare processed tea.",
+      "keywords": ["tea buds", "leaves", "plant parts", "premium tea"],
+      "related_faqs": ["faq_001", "faq_042"]
+    },
+    {
+      "id": "faq_064",
+      "category": "business_operations",
+      "question": "What is working capital and why is it needed?",
+      "answer": "Working capital (approximately Birr 136,900 for a tea processing plant) covers day-to-day operational expenses like: accounts receivable (30 days), raw material inventory (30 days), work in progress (5 days), finished product inventory (30 days), and cash on hand (10 days). It ensures smooth operations before revenue is received.",
+      "keywords": ["working capital", "cash flow", "operational funds", "liquidity"],
+      "related_faqs": ["faq_017", "faq_016"]
+    },
+    {
+      "id": "faq_065",
+      "category": "general",
+      "question": "What makes tea aromatic?",
+      "answer": "Tea's distinctive aroma comes from aromatic oils released during the rolling process when leaf cells are broken. These oils are brought to the surface and contribute to both the smell and taste of the tea. The firing process locks in these aromatic compounds, preserving the tea's fragrance.",
+      "keywords": ["aroma", "fragrance", "smell", "aromatic oils", "flavor"],
+      "related_faqs": ["faq_030", "faq_032"]
+    }
+  ]
+}
