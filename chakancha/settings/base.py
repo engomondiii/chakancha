@@ -150,13 +150,13 @@ CHATBOT_CONFIG = {
 # Anthropic Claude API (Cloud Sonnet - Chakancha Chatbot)
 ANTHROPIC_API_KEY = os.environ.get(
     'ANTHROPIC_API_KEY',
-    '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'
+    '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'
 )
 
 # OpenAI API (Embeddings for RAG System)
 OPENAI_API_KEY = os.environ.get(
     'OPENAI_API_KEY',
-    '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'
+    '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'
 )
 
 # Pinecone Vector Database (RAG FAQ Storage)
