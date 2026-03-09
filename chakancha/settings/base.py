@@ -94,9 +94,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+
+# Create static directory if it doesn't exist
+STATICFILES_DIRS = []
+static_dir = os.path.join(BASE_DIR, 'static')
+if os.path.exists(static_dir):
+    STATICFILES_DIRS.append(static_dir)
 
 # WhiteNoise configuration
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
@@ -144,52 +147,38 @@ CHATBOT_CONFIG = {
 }
 
 # ═══════════════════════════════════════════════════════
-# API KEYS & EXTERNAL SERVICES (WITH FALLBACK DEFAULTS)
+# API KEYS & EXTERNAL SERVICES
 # ═══════════════════════════════════════════════════════
+# NOTE: Keys must be set in environment variables (Vercel dashboard or .env file)
+# NO hardcoded keys to pass GitHub secret scanning
 
-# Anthropic Claude API (Cloud Sonnet - Chakancha Chatbot)
-ANTHROPIC_API_KEY = os.environ.get(
-    'ANTHROPIC_API_KEY',
-    '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'
-)
+# Anthropic Claude API
+ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY', '')
 
-# OpenAI API (Embeddings for RAG System)
-OPENAI_API_KEY = os.environ.get(
-    'OPENAI_API_KEY',
-    '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'
-)
+# OpenAI API (for embeddings)
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY', '')
 
-# Pinecone Vector Database (RAG FAQ Storage)
-PINECONE_API_KEY = os.environ.get(
-    'PINECONE_API_KEY',
-    'pcsk_3SHH1W_8WMkx7xRXocgrkiN2TtqFrev3z3RFgxUYDfXqrxGMwSzSygAqh5eW97pFG8pVHJ'
-)
+# Pinecone Vector Database (RAG System)
+PINECONE_API_KEY = os.environ.get('PINECONE_API_KEY', '')
 PINECONE_ENVIRONMENT = os.environ.get('PINECONE_ENVIRONMENT', 'us-east-1')
 PINECONE_INDEX_NAME = os.environ.get('PINECONE_INDEX_NAME', 'chakancha-faq-en')
 
-# Supabase (Database & Storage)
-SUPABASE_URL = os.environ.get(
-    'SUPABASE_URL',
-    'https://ssqxcyrmtbrzfjqfkaxg.supabase.co'
-)
-SUPABASE_KEY = os.environ.get(
-    'SUPABASE_KEY',
-    'sb_publishable_Ifl4V96Kxg3tizMdKPfY4g_EZo3IBYc'
-)
+# Supabase
+SUPABASE_URL = os.environ.get('SUPABASE_URL', '')
+SUPABASE_KEY = os.environ.get('SUPABASE_KEY', '')
 
-# DHL API (Phase 5 - Empty by default, uses mock mode)
+# DHL API (Phase 5)
 DHL_API_KEY = os.environ.get('DHL_API_KEY', '')
 
 # ═══════════════════════════════════════════════════════
 # API KEY VALIDATION (Development Only)
 # ═══════════════════════════════════════════════════════
 
-# Verify critical API keys are set on startup
 def validate_api_keys():
     """Print warnings for missing API keys in development"""
     import sys
     
-    # Only check in development
+    # Only check in development (runserver or shell)
     if 'runserver' in sys.argv or 'shell' in sys.argv:
         warnings = []
         

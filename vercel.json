@@ -5,30 +5,15 @@
       "src": "chakancha/wsgi.py",
       "use": "@vercel/python",
       "config": {
-        "maxLambdaSize": "15mb",
+        "maxLambdaSize": "250mb",
         "runtime": "python3.11"
-      }
-    },
-    {
-      "src": "build.sh",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "staticfiles"
       }
     }
   ],
   "routes": [
     {
-      "src": "/static/(.*)",
-      "dest": "/staticfiles/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "chakancha/wsgi.py"
     }
-  ],
-  "env": {
-    "DJANGO_SETTINGS_MODULE": "chakancha.settings.production"
-  },
-  "regions": ["iad1"]
+  ]
 }
